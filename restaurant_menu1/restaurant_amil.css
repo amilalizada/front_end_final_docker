@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+color: #7e7e7e !important;
+font-size: 14px !important;
+line-height: 27px !important;
+overflow-x: hidden !important;
+letter-spacing: 1px !important;
+font-weight: normal !important;
+font-family: 'Quicksand', sans-serif !important;
+font-weight: 400 !important;
+}
+.center_words{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bestsolutions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_words h2{
+    font-family: 'Kristi', cursive !important;
+    font-size: 70px;
+    color: #eeeeee;
+}
+.our_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 56px;
+}
+.our_services h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: #2d2d2d;
+    font-weight: 100;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.meals_img img{
+    width: 80px !important;
+}
+.description_up{
+    display: flex;
+    justify-content: space-between;
+}
+.description_up .price{
+    font-size: 17px;
+    color: #2d2d2d;
+}
+.description_up .meals_name{
+    font-size: 14px;
+    color: #2d2d2d;
+    
+}
+
+.description_down{
+    display: flex;
+    justify-content: space-between;
+}
+.meals_time{
+    background-color: #c0a58b;
+    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff !important;
+}
+.meals_time_different{
+    background-color: white;
+    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #2d2d2d !important;
+    border: 1px solid #f1f1f1;
+}
+.nd_options_position_absolute{
+    bottom: 2px;
+    position: absolute;
+    border-bottom: 2px dotted #f1f1f1;
+    width: 100%;
+    height: 3px;
+    display: block;
+
+}
+
