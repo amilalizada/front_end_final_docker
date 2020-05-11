@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.body{
+font-weight: normal !important;
+letter-spacing: 1px !important;
+color: #7e7e7e !important;
+font-size: 14px !important;
+line-height: 27px !important;
+overflow-x: hidden !important;
+
+font-weight: 400 !important;
+}
+
+.parent-of-tph{
+    /* box-sizing: content-box !important; */
+}
+.top-of-header{
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.tph-left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+.tph-right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    font-size: 13px;
+    color: #7e7e7e;
+}
+.symbol-social{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Header ul bar */
+
+.under-the-header{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/02/para-11.jpg);
+
+}
+.nd_options_background_position_center_bottom {
+    background-position: center bottom;
+}
+.nd_options_background_size_cover {
+    background-size: cover;
+}
+.nd_options_section {
+    width: 100%;
+    float: left;
+}
+.main-li{
+    list-style: none;
+    position: relative;
+   
+}
+.main-li ul{
+    position: absolute;
+    /* display: none; */
+    top:30px;
+}
+
+.main-li a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    color: #ffffff;
+}
+.secondary-li{
+    color: white;
+    list-style: none;
+}
+.logo-ristorante{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-div{
+    padding-top: 20px;
+}
+.header-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-under-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    background: -moz-linear-gradient(top, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%);
+    background: -webkit-linear-gradient(top, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%);
+    /* background: linear-gradient(to bottom, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%); */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00656460', endColorstr='#a6656460',GradientType=0 );
+    
+}
+
+.book-a-table{
+    font-family: 'Kristi', cursive;
+    font-size: 120px;
+    color: white;
+    font-weight: 400;
+}
+.empty-for-height{
+    height: 200px;
+}
+.home-li{
+    display: none;
+}
+
+.menu-home:hover .home-li{
+    display: block;
+}
+.about-li{
+    display: none;
+}
+.menu-about:hover .about-li{
+    display: block;
+}
+.pages-li{
+    display: none;
+}
+.menu-pages:hover .pages-li{
+    display: block;
+}
+.list-of-services{
+    position:relative;
+}
+
+.services-ul{
+    display: none;
+    position: absolute;
+    /* left: 210px; */
+    top: 0;
+    margin-left: 165px;
+    padding-left: 25px;
+}
+.list-of-services:hover .services-ul{
+    display: block;
+}
+.main-li ul{
+    margin-left: 0px;
+    padding-top: 0px;
+    width: 195px;
+    z-index: 999;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    
+}
+.secondary-li{
+    color: #7e7e7e;
+    padding: 15px 25px;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: left;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 2px 5px #f1f1f1;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.list-of-menu{
+    position:relative;
+}
+
+.menu-ul{
+    display: none;
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+}
+.list-of-menu:hover .menu-ul{
+    display: block;
+}
+.list-of-contact{
+    position:relative;
+}
+
+.contact-ul{
+    display: none;
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+}
+.list-of-contact:hover .contact-ul{
+    display: block;
+}
+.list-of-about{
+    position:relative;
+}
+
+.about-ul{
+    display: none;
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+}
+.list-of-about:hover .about-ul{
+    display: block;
+}
+.main-menu-ul{
+    display: none;
+}
+.menu-menu:hover .main-menu-ul{
+    display: block;
+}
+.shop-li{
+    display: none;
+}
+.menu-shop:hover .shop-li{
+    display: block;
+}
+
+.news-li{
+    display: none;
+}
+.menu-news:hover .news-li{
+    display: block;
+}
+.list-of-singlePost{
+    position:relative;
+}
+
+.single-post{
+    display: none;
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+}
+.list-of-singlePost:hover .single-post{
+    display: block;
+}
+.main-contact-ul{
+    display: none;
+}
+.main-contact:hover .main-contact-ul{
+    display: block;
+}
