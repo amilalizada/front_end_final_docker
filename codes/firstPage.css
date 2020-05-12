@@ -92,6 +92,13 @@ font-weight: 400 !important;
     color: white;
     list-style: none;
 }
+.arrows{
+    padding-left: 75px;
+}
+.arrows-menu{
+    padding-left: 68px;
+}
+
 .logo-ristorante{
     padding-top: 10px;
     display: flex;
@@ -147,7 +154,10 @@ font-weight: 400 !important;
     display: block;
 }
 .list-of-services{
+    width:100%;
     position:relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .services-ul{
@@ -192,6 +202,8 @@ font-weight: 400 !important;
 }
 .list-of-menu{
     position:relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-ul{
@@ -207,8 +219,47 @@ font-weight: 400 !important;
 .list-of-menu:hover .menu-ul{
     display: block;
 }
+.hot{
+   padding: 3px 5px;
+    background-color: #b66565;
+}
+.book-for-hot::after{
+    content: "HOT";
+    float: right;
+    background-color: #b66565;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
+.best-for-about::after{
+    content: "BEST";
+    float: right;
+    background-color: #c0a58a;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
+.delivery-for-new::after{
+    content: "NEW";
+    float: right;
+    background-color: #2d2d2d;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 5px;
+}
 .list-of-contact{
     position:relative;
+    display: flex;
+    justify-content: space-between;
+}
+.arrows-contact{
+    padding-left: 80px;
 }
 
 .contact-ul{
@@ -226,6 +277,11 @@ font-weight: 400 !important;
 }
 .list-of-about{
     position:relative;
+    display: flex;
+    justify-content: space-between;
+}
+.arrows-about{
+    margin-left: 72px;
 }
 
 .about-ul{
@@ -262,6 +318,8 @@ font-weight: 400 !important;
 }
 .list-of-singlePost{
     position:relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .single-post{
