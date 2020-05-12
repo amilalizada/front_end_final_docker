@@ -14,7 +14,7 @@ letter-spacing: 1px !important;
 font-weight: normal !important;
 font-family: 'Quicksand', sans-serif !important;
 font-weight: 400 !important;
-overflow-x: hidden;
+overflow-x: hidden !important;
 }
 .parent-of-tph{
     /* box-sizing: content-box !important; */
@@ -63,7 +63,7 @@ overflow-x: hidden;
 }
 .nd_options_section {
     width: 100%;
-    float: left;
+    
 }
 .main-li{
     list-style: none;
@@ -711,8 +711,8 @@ textarea:focus, input:focus{
     border-bottom: 1px solid #f1f1f1;
 }
 .chefs{
-    position: absolute;
-    top: -110px;
+    /* position: absolute; */
+    margin-top: -110px;
 }
 .chef_card{
     display: flex;
@@ -765,6 +765,7 @@ textarea:focus, input:focus{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 220px 0px;
     /* background-color: white; */
 }
 .specialist{
@@ -795,4 +796,18 @@ textarea:focus, input:focus{
 .book_a_table:focus{
     outline: none;
 }
-
+.logo_responsive img{
+    width: 120px;
+    height: 39px;
+    
+}
+.logo_responsive{
+    margin-right: 50px;
+}
+.hamburger{
+    width: 25px;
+    height: 25px;
+    background-color: #1c1c1c;
+    /* margin-right: -800px; */
+    float: right;
+}
