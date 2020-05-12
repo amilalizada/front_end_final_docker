@@ -14,7 +14,6 @@
     font-size: 14px !important;
     line-height: 27px !important;
     overflow-x: hidden !important;
-    
     font-weight: 400 !important;
     }
 
@@ -435,6 +434,8 @@
     height: 483px;
     position: relative;
     padding-top: 20px;
+    display: flex;
+    z-index: 10;
 }
 .for-texts h3, h5{
     color: #7e7e7e;
@@ -468,4 +469,232 @@
     border-style: none;
     background-color: white;
     font-size: 14px;
+}
+.second-part{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/post-03.jpg);
+}
+.third-part{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/post-04.jpg);
+}
+.third-section{
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    padding: 30px;
+}
+.for-bg-img{
+    height: 100%;
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-02.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.facilities{
+    /* padding-top: 30px !important; */
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    text-align: left !important;
+    padding: 40px !important;
+    height: 80% !important;
+    
+}
+.facil{
+    color: #ffffff;
+    /* padding: px; */
+    font-size: 50px;
+    line-height: 30 px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.after-facil{
+    color: #ffffff;
+    /* padding: px; */
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+.but-in-facil{
+    border-radius: 3px;
+    letter-spacing: 2px;
+    line-height: 16px;
+    font-size: 16px;
+    background-color: #c0a58a;
+    padding: 15px 35px;
+    color: #ffffff;
+    border-style: none;
+}
+.white-cards{
+    border-radius: 3px;
+    width: 100%;
+}
+.in-white-cards{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    margin: 10px 0px;
+}
+.meal{
+    font-size: 35px;
+    color: #2d2d2d;
+    line-height: 45px;
+}
+.meal-from{
+    color: #7e7e7e;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.forth-section{
+    padding-top: 20px;
+}
+.take-away{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0px !important;
+    padding-top: 60px !important;
+    padding-right: 60px !important;
+    padding-bottom: 60px !important;
+    padding-left: 60px !important;
+    border-left-color: #f1f1f1 !important;
+    border-left-style: solid !important;
+    border-right-color: #f1f1f1 !important;
+    border-right-style: solid !important;
+    border-top-color: #f1f1f1 !important;
+    border-top-style: solid !important;
+    border-bottom-color: #f1f1f1 !important;
+    border-bottom-style: solid !important;
+}
+.h4s{
+    padding-top: 10px;
+    color: #878787;
+    text-align: center;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.div-of-best{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best-solutions{
+    color: #eeeeee;
+    padding: px;
+    text-align: center;
+    font-size: 70px;
+    line-height:25 px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-family: 'Kristi', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.our-services{
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+}
+.daily-all{
+    display: flex;
+    padding: 30px 0px;
+}
+.daily-menu{
+    display: flex;
+    flex-flow: column;
+}
+.daily-menu h3{
+    color: #1c1c1c;
+    font-size: 20px;
+    line-height: 20px;
+}
+.daily-menu p{
+    color: #878787;
+    font-size: 14px;
+    line-height: 24px;
+}
+.daily-menu a{
+    width: 89px;
+    font-size: 11px;
+    line-height: 11px;
+    border-radius: 0px;
+    border: 0px solid;
+    background-color: #1c1c1c;
+    padding: 8px 12px;
+    color: #ffffff;
+}
+.img-of-daily{
+    padding-right: 20px;
+}
+.div-of-our-service{
+    padding-bottom: 20px;
+}
+.up-footer{
+    position: relative;
+    left: -42px;
+    box-sizing: border-box;
+    width: 103% !important;
+    padding-left: 42px;
+    padding-right: 42px;
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-03.jpg);
+}
+.budiv{
+    width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+.doing{
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: normal;
+}
+.numbers{
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+.numbers-div{
+    padding-left: 30px;
+    padding-top: 30px;
+    display: flex;
+    width: 66%;
+    justify-content: space-around;
+}
+.rest-cats{
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.doing-div{
+    padding-top: 80px;
+    padding-left:50px;
+}
+.doing-span{
+    padding-left: 20px;
 }
