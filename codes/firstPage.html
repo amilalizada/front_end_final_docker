@@ -227,134 +227,246 @@
     <div class="col-sm-12">
         <div class="row container-fluid">
             <div class="col-sm-12 col-md-6 hill-rest ">
-                <img class="hill-rest-img"
-                    src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/02/restaurant-01.jpg">
-                <div class="select-rest-type">
-                    <span id="main-selected"><span id="choosed-rest-type">Hill Restaurant</span><span id="down-arrow"><i
-                                class="arrow down"></i></span></span>
-                    <span class="rest-select">
-                        <span id="option-1">Hill Restaurant</span>
-                        <span id="option-2">Modern Restaurant</span>
+                <div>
+                    <img class="hill-rest-img"
+                        src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/02/restaurant-01.jpg">
+                    <div class="select-rest-type">
+                        <span id="main-selected"><span id="choosed-rest-type">Hill Restaurant</span><span
+                                id="down-arrow"><i class="arrow down"></i></span></span>
+                        <span class="rest-select">
+                            <span id="option-1">Hill Restaurant</span>
+                            <span id="option-2">Modern Restaurant</span>
+                        </span>
+                    </div>
+                    <div class="for-linear"></div>
+                    <div class="second-linear">
+                    </div>
+                </div>
+                <div class="all-details">
+                    <div class="details d-none">
+                        <div class="after-push">
+                            <span>GUESTS: <span class="count-of-guests"></span></span>
+                            <span>TIME: <span class="time-of-order"></span></span>
+                        </div>
+                        <div class="after-push">
+                            <span>OCCASION: <span class="type-of-occasion"></span></span>
+                            <span>DATE: <span class="date-of-order"></span></span>
+                        </div>
+                    </div>
+                    <div class="details-2 d-none">
+                        <div class="after-push second-part">
+                            <span>NAME: <span class="name-of-guest"></span></span>
+                            <span>SURNAME: <span class="surname-of-guest"></span></span>
+                        </div>
+                        <div class="after-push second-part">
+                            <span>EMAIL: <span class="email-of-guest"></span></span>
+                            <span>PHONE: <span class="phone-of-guest"></span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="counting-guests">
+                    <span class="guests">GUESTS</span>
+                    <span class="counters">
+                        <span class="number">1</span>
+                        <span class="symbols">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </span>
                     </span>
                 </div>
-                <div class="for-linear"></div>
-                <div class="second-linear">
-                    <div class="counting-guests">
-                        <span class="guests">GUESTS</span>
-                        <span class="counters">
-                            <span class="number">1</span>
-                            <span class="symbols">
-                                <span class="plus">+</span>
-                                <span class="minus">-</span>
-                            </span>
-                        </span>
-                    </div>
-                    <div class="availabness">
-                        <span>
-                            <span class="figure-1 figures"></span>
-                            <span class="names-of-availabness">Current Day</span>
-                        </span>
-                        <span>
-                            <span class="figure-2 figures"></span>
-                            <span class="names-of-availabness">Selected Day</span>
-                        </span>
-                        <span>
-                            <span class="figure-3 figures"></span>
-                            <span class="names-of-availabness">Not Available</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6" style="background-color: #2d2d2d; width: 100%; padding: 40px 0px;">
-                <div class="hello-week" style="width: 80%;">
-                    <div class="hello-week__header">
-                        <button class="btn demo-prev"><img draggable="false" role="img" class="emoji" alt="◀"
-                                src="https://s.w.org/images/core/emoji/12.0.0-1/svg/25c0.svg"></button>
-                        <div class="hello-week__label"></div>
-                        <button class="btn demo-next"><img draggable="false" role="img" class="emoji" alt="▶"
-                                src="https://s.w.org/images/core/emoji/12.0.0-1/svg/25b6.svg"></button>
-                    </div>
-                    <p style="color: white;"><strong>Picked Days:</strong></p>
-                    <ul class="demo-picked"><span style="color: white;">n/a</span></ul>
-                    <div class="hello-week__week"></div>
-                    <div class="hello-week__month"></div>
-
-                </div>
-                <span class="occas">Occasion</span>
-                <div class="occasion">
+                <div class="availabness">
                     <span>
-                        <span>Occasion:</span>
-                        <span class="choosed-celebration-type"><span class="not-set">not set</span> <span
-                                id="down-arrow"><i class="arrow down"></i></span> </span>
+                        <span class="figure-1 figures"></span>
+                        <span class="names-of-availabness">Current Day</span>
                     </span>
-                    <span class="type-of-celebrations d-none">
-                        <span class="name-of-celeb">not set</span>
-                        <span class="name-of-celeb">anniversary</span>
-                        <span class="name-of-celeb">celebration</span>
-                        <span class="name-of-celeb">work</span>
+                    <span>
+                        <span class="figure-2 figures"></span>
+                        <span class="names-of-availabness">Selected Day</span>
+                    </span>
+                    <span>
+                        <span class="figure-3 figures"></span>
+                        <span class="names-of-availabness">Not Available</span>
                     </span>
                 </div>
             </div>
-            <div>
-                <div class="time"><span>TIME:</span></div>
-                <div class="buttons-first-row container-fluid">
-                    <div class="col-auto buttons"><button class="in-the-button">9:00 am</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">9:30 am</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">10:00 am</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">10:30 am</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">11:00 am</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">11:30 am</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">12:00 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button">12:30 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">1:00 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">1:30 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">2:00 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">2:30 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">3:00 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">3:30 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">4:00 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">4:30 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">5:00 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">5:30 pm</button></div>
-                    <div class="col-auto buttons"><button class="in-the-button second-row">6:00 pm</button></div>
-                </div>
-                <div class="bk-table"><button class="booking-table">BOOK A TABLE</button></div>
+            <div class="col-sm-12 col-md-6 parent-of-hello"
+                style="background-color: #2d2d2d; width: 100%; padding: 0px 0px;">
+                <div class="hello-week" style="width: 80%;">
+                    <!-- <div class="hello-week__header">
+                                <button class="btn demo-prev"><img draggable="false" role="img" class="emoji" alt="◀"
+                                        src="https://s.w.org/images/core/emoji/12.0.0-1/svg/25c0.svg"></button>
+                                <div class="hello-week__label"></div>
+                                <button class="btn demo-next"><img draggable="false" role="img" class="emoji" alt="▶"
+                                        src="https://s.w.org/images/core/emoji/12.0.0-1/svg/25b6.svg"></button>
+                            </div>
+                            <p style="color: white;"><strong>Picked Days:</strong></p>
+                            <ul class="demo-picked"><span style="color: white;">n/a</span></ul>
+                            <div class="hello-week__week"></div>
+                            <div class="hello-week__month"></div> -->
 
+                </div>
+                <div class="all-inputs d-none">
+                    <div class="all-inputs-2">
+                        <span class="inserting">Insert your Informations :</span>
+                        <div class="name-div">
+                            <span class="name-span">
+                                <span class="name">Name*</span>
+                                <span><input class="name-input" type="text"></span>
+                            </span>
+                            <span class="name-span">
+                                <span class="name">Surname*</span>
+                                <span><input class="surname-input" type="text"></span>
+                            </span>
+                        </div>
+                        <div class="email-div">
+                            <span class="name-span">
+                                <span class="name">Email*</span>
+                                <span><input class="email-input" type="email"></span>
+                            </span>
+                            <span class="name-span">
+                                <span class="name">Phone*</span>
+                                <span><input class="number-input" type="text"></span>
+                            </span>
+                        </div>
+                        <div class="textarea-div">
+                            <span class="textarea">
+                                <span class="name">Message</span>
+                                <textarea class="textarea-input" rows="5" cols="52"
+                                    style="border-style: none;"></textarea>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div>
+                        <span class="checkbox">
+                            <span class="chek-and-terms">
+                                <input type="checkbox">
+                                <span class="terms">Terms and Conditions</span>
+                            </span>
+
+                            <span><button class="check-button">CHECKOUT</button></span>
+                        </span>
+                    </div>
+                    <!-- <div class="empty"></div> -->
+                </div>
+                <div class="pay-details d-none">
+                    <div>
+                        <h3 class="booking-methods">Booking Methods :</h3>
+                    </div>
+                    <div>
+                        <p class="about-booking-methods">Make sure you reserve your table by leaving a deposit or send a
+                            simple booking request that
+                            can be confirmed by the owner. Leaving the deposit is very quick, simple and safe.</p>
+                    </div>
+                    <div class="crds crds-first">
+                        <div class="plus-button-credit pls-btn">
+                            <span class="cards-plus">
+                                <img alt="" class="nd_rst_margin_top_6"
+                                    src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/plugins/nd-shortcodes/img/icons/icon-add-white.png"
+                                    width="12">
+                            </span></div>
+                        <span class="name-of-payment">CREDIT CARD</span>
+                    </div>
+                    <div class="crds">
+                        <div class="plus-button-paypal pls-btn"><span class="cards-plus">
+                                <img alt="" class="nd_rst_margin_top_6"
+                                    src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/plugins/nd-shortcodes/img/icons/icon-add-white.png"
+                                    width="12">
+                            </span></div>
+                        <span class="name-of-payment">PAYPAL</span>
+                    </div>
+                    <div class="crds">
+                        <div class="plus-button-booking-request pls-btn"><span class="cards-plus"><img alt=""
+                                    class="nd_rst_margin_top_6"
+                                    src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/plugins/nd-shortcodes/img/icons/icon-add-white.png"
+                                    width="12"></span></div>
+                        <span class="name-of-payment">BOOKING REQUEST</span>
+                    </div>
+                </div>
+                <div class="about-occasion">
+                    <span class="occas">Occasion</span>
+                    <div class="occasion">
+                        <span>
+                            <span>Occasion:</span>
+                            <span class="choosed-celebration-type"><span class="not-set">not set</span> <span
+                                    id="down-arrow"><i class="arrow down"></i></span> </span>
+                        </span>
+                        <span class="type-of-celebrations d-none">
+                            <span class="name-of-celeb">not set</span>
+                            <span class="name-of-celeb">anniversary</span>
+                            <span class="name-of-celeb">celebration</span>
+                            <span class="name-of-celeb">work</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-time">
+            <div class="time"><span>TIME:</span></div>
+            <div class="buttons-first-row container-fluid">
+                <div class="col-auto buttons"><button class="in-the-button">9:00 am</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">9:30 am</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">10:00 am</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">10:30 am</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">11:00 am</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">11:30 am</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">12:00 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button">12:30 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">1:00 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">1:30 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">2:00 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">2:30 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">3:00 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">3:30 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">4:00 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">4:30 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">5:00 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">5:30 pm</button></div>
+                <div class="col-auto buttons"><button class="in-the-button second-row">6:00 pm</button></div>
+            </div>
+            <div class="bk-table"><button class="booking-table">BOOK A TABLE</button></div>
+
+        </div>
+    </div>
+    </div>
+    <div class="row m-0">
+        <div class="bg-img-div parallax-window" data-parallax="scroll"
+            data-image-src='http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-02.jpg'>
+        </div>
+        <div class="all-things">
+            <div class="col-sm-12 col-md-3 num-adv">
+                <h1>02</h1>
+                <span class="parags">
+                    <p>NUMBER</p>
+                    <p>RESTAURANTS</p>
+                </span>
+            </div>
+            <div class="col-sm-12 col-md-3 num-adv">
+                <h1>56</h1>
+                <span class="parags">
+                    <p>NEW FOOD</p>
+                    <p>MENU DISHES</p>
+                </span>
+            </div>
+            <div class="col-sm-12 col-md-3 num-adv">
+                <h1>73</h1>
+                <span class="parags">
+                    <p>YEARS OF</p>
+                    <p>EXPERIENCE</p>
+                </span>
+            </div>
+            <div class="col-sm-12 col-md-3 num-adv">
+                <h1>14</h1>
+                <span class="parags">
+                    <p>NEW CHEF</p>
+                    <p>IN KITCHEN</p>
+                </span>
             </div>
         </div>
     </div>
-   <div class="bg-img-div">
-    <div class="row all-things">
-        <div class="col-sm-12 col-md-3 num-adv">
-            <h1>02</h1>
-            <span class="parags">
-                <p>NUMBER</p>
-                <p>RESTAURANTS</p>
-            </span>
-        </div>
-        <div class="col-sm-12 col-md-3 num-adv">
-            <h1>56</h1>
-            <span class="parags">
-                <p>NEW FOOD</p>
-                <p>MENU DISHES</p>
-            </span>
-        </div>
-        <div class="col-sm-12 col-md-3 num-adv">
-            <h1>73</h1>
-            <span class="parags">
-                <p>YEARS OF</p>
-                <p>EXPERIENCE</p>
-            </span>
-        </div>
-        <div class="col-sm-12 col-md-3 num-adv">
-            <h1>14</h1>
-            <span class="parags">
-                <p>NEW CHEF</p>
-                <p>IN KITCHEN</p>
-            </span>
-        </div>
     </div>
-   </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -364,6 +476,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="src/parallax.js"></script>
     <script src="src/hello.week.min.js"></script>
     <script src="firstPage.js"></script>
 

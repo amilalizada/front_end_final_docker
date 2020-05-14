@@ -3,17 +3,23 @@ const next = document.querySelector('.demo-next');
 const today = document.querySelector('.demo-today');
 const picked = document.querySelector('.demo-picked');
 const last = document.querySelector('.demo-last');
+function scrollPage(){
+    jQuery(window).trigger('resize').trigger('scroll');
 
+}
+$('.parallax-window').parallax({
+    positionX: '10px',
+}); 
 function updateInfo() {
+    console.log('in update');
     if (this.today) {
         today.innerHTML = '';
         var li = document.createElement('li');
         li.innerHTML = this.today;
         today.appendChild(li);
     }
-
     if (this.lastSelectedDay) {
-
+        console.log(this.daysSelected)
         picked.innerHTML = '';
         for (days of this.selectedDays) {
             var li = document.createElement('li');
@@ -43,8 +49,8 @@ const myCalendar = new HelloWeek({
     onSelect: updateInfo
 });
 
-prev.addEventListener('click', () => myCalendar.prev());
-next.addEventListener('click', () => myCalendar.next());
+// prev.addEventListener('click', () => myCalendar.prev());
+// next.addEventListener('click', () => myCalendar.next());
 
 $(document).ready(function(){
     document.querySelector('#main-selected').addEventListener('click',function(){
@@ -94,6 +100,50 @@ $(document).ready(function(){
                     element.classList.remove('buttons-bg'));
                 this.classList.add('buttons-bg');
             }))
-            updateInfo();
-            console.log(picked);
+        document.querySelector('.bk-table').addEventListener('click',function(){
+            let typeOfRest = document.querySelector('#choosed-rest-type').textContent;
+            let countOfGuests = document.querySelector('.number').textContent;
+            let time = document.querySelector('.buttons-bg').textContent;
+            let date = myCalendar.lastSelectedDay;
+            let occasion = document.querySelector('.not-set').textContent;
+            let selected = document.querySelector('#choosed-rest-type').textContent;
+            console.log(typeOfRest);
+            console.log(countOfGuests);
+            console.log(time);
+            console.log(date);
+            console.log(occasion);
+            document.querySelector('.hello-week').classList.add('d-none');
+            document.querySelector('.about-occasion').classList.add('d-none');
+            document.querySelector('.about-time').classList.add('d-none');
+            document.querySelector('.all-inputs').classList.remove('d-none');
+            document.querySelector('.parent-of-hello').classList.add('adding-tr-bg');
+            document.querySelector('.counting-guests').classList.add('d-none');
+            document.querySelector('.availabness').classList.add('d-none');
+            document.querySelector('.details').classList.remove('d-none');
+            document.querySelector('.count-of-guests').innerHTML = countOfGuests;
+            document.querySelector('.time-of-order').innerHTML = time;
+            document.querySelector('.type-of-occasion').innerHTML = occasion;
+            document.querySelector('.date-of-order').innerHTML = date;
+            document.querySelector('.select-rest-type').innerHTML = '';
+            document.querySelector('.select-rest-type').classList.add('new-selected');
+            document.querySelector('.select-rest-type').innerHTML = selected;
+
+            scrollPage();
+        })
+        document.querySelector('.check-button').addEventListener('click',function(){
+            let name = document.querySelector('.name-input').value;
+            let surname = document.querySelector('.surname-input').value;
+            let email = document.querySelector('.email-input').value;
+            let phone = document.querySelector('.number-input').value;
+            let description = document.querySelector('.textarea-input').value;
+            document.querySelector('.name-of-guest').innerHTML = name;
+            document.querySelector('.surname-of-guest').innerHTML = surname;
+            document.querySelector('.email-of-guest').innerHTML = email;
+            document.querySelector('.phone-of-guest').innerHTML = phone;
+            document.querySelector('.all-inputs').classList.add('d-none');
+            document.querySelector('.pay-details').classList.remove('d-none');
+            document.querySelector('.details-2').classList.remove('d-none');
+            scrollPage();
+        })
+        
 })
