@@ -186,7 +186,7 @@
 
     <section class="middle ">
         <div class="row  stylemiddle">
-            <div class="col-xl-6 col-12 container" >
+            <div class="col-xl-6 col-12 container">
                 <p class="left">Hi! Our Restaurant has been present for over 20 years in
                     the market. We make the most of all our
                     customers.</p>
@@ -262,7 +262,7 @@
             <div style="margin-bottom: 20px;">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at portitor.</p>
             </div>
-            <div >
+            <div>
                 <a href="">CONTACT ME</a>
             </div>
         </div>
@@ -646,12 +646,50 @@
             };
             var videoBuild = new YoutubeOverlayModule(configObject);
             videoBuild.activateDeployment();
-
-            $('.parallax-window').parallax({
-                positionX:"center",
-                positionY:"200px",
-                speed:"0.9"
-            });
+            $(window).load(function () {
+                if ($(window).width() < 1200) {
+                    console.log('sasa')
+                    $('.parallax-window').parallax({
+                        positionX: "center",
+                        positionY: '-80',
+                        naturalWidth: '1500',
+                        naturalHeight:'1500',
+                        speed: "0.9"
+                    });
+                }
+                else {
+                    $('.parallax-window').parallax({
+                        positionX: "center",
+                        positionY: '-80',
+                        naturalWidth: '800',
+                        naturalHeight:'500',
+                        // naturalWidth:'1000',
+                        speed: "0.9"
+                    });
+                }
+            })
+            $(window).resize(function () {
+                if ($(window).width() < 1200) {
+                    console.log('sa')
+                    $('.parallax-window').parallax({
+                        positionX: "center",
+                        positionY: '-80',
+                        naturalWidth: '500',
+                        naturalHeight:'400',
+                        speed: "0.9"
+                    });
+                }
+                else {
+                    $('.parallax-window').parallax({
+                        positionX: "center",
+                        positionY: '-80',
+                        naturalWidth: '800',
+                        naturalHeight:'500',
+                        // naturalWidth:'1000',
+                        speed: "0.9"
+                    });
+                }
+            })
         })
     </script>
 </body>

@@ -851,7 +851,7 @@ color: #ffffff;
     width: 35px;
 }
 .parallax-window {
-    /* min-height: 400px; */
+    min-height: 300px;
     background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%);
     display: flex;
     justify-content: center;
