@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
 body{
 color: #7e7e7e !important;
 font-size: 14px !important;
@@ -37,8 +38,551 @@ header{
     margin-right: 14px;
     cursor: pointer;
 }
-.service{
+.three-pict{
+    padding: 55px;
+}
+.three-pict-back{
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+.best-solutions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.times{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/02/para-01.jpg?id=1249) !important;
+    background-repeat: no-repeat !important;
+    background-size: 65%;
+    background-position: center !important;
+}
+.times p{
+    color: white;
+}
+.opening-times{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/bg_01.jpg?id=525) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    height: 100%;
+}
+.opening-times h1{
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+.opening-times .time{
+    display: flex;
+    justify-content: flex-end;
+}
+.find-us-here{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/bg_02.jpg?id=526) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    margin-top: 100px;
+    height: 100%;
+}
+.find-us-here h1{
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+.linear-gradient-pictures{
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+}
+.specialist{
+    margin-top: 100px;
+}
+.specialist-background{
+    background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-08.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.specialist-background .col-12{
+    padding: 100px 270px;
+    margin: 0;
+}
+.specialist-background h1{
+    font-size: 50px;
+    line-height: px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+.specialist-background p{
+    font-size: 13px;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+.img-background{
+    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/img-15.jpg?id=640) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-align: center;
+}
+#demo2{
+    transition: all 0.8s ease;
+}
+#demo2:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.promotion{
+    padding: 77px;
+}
+.menu-name{
+    font-weight: lighter !important;
+    color: white !important;
+    letter-spacing: 3px;
+    font-size: 17px;
+    line-height: 17px;
+    position: absolute;
+    bottom: 28px;
+}
+.menu-name:hover{
+    text-decoration: none;
+}
+.menu-name2{
+    font-weight: lighter !important;
+    color: white !important;
+    letter-spacing: 3px;
+    font-size: 17px;
+    line-height: 17px;
+    position: relative;
+    bottom: 50px;
+}
+.menu-name2:hover{
+    text-decoration: none;
+}
+.center_words{
+    margin-top: 0 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bestsolutions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_words h2{
+    font-family: 'Kristi', cursive !important;
+    font-size: 70px;
+    color: #eeeeee;
+}
+.our_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+}
+.our_services h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: #2d2d2d;
+    font-weight: 100;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.description_up{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.description_up .price{
+    font-size: 17px;
+    color: #2d2d2d;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    background-color: white;
+    
+    /* line-height: 1.2; */
+}
+.description_up .meals_name{
+    font-size: 17px;
+    line-height: 17px;
+    color: #2d2d2d;
+    font-weight: normal;
+    z-index: 1;
+    background-color: white;
+}
+input::placeholder{
+    font-size: 15px;
+}
+.my_container{
+    width: 1200px;
+    margin: auto;
+}
+.description_down{
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1199px){
+ .my_container{
+    width: 960px;
+ } 
+ .fixed-backet{
+    display: none;
+}
+.fixed-small{
+    display: none;
+}
+.card{
+    padding: 40px !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+.email{
+    width: 60% !important;
+}
+.subscribe{
+    padding: 10px 20px;
+    width: unset !important;
+}
+.service-info{
+    margin-bottom: 30px;
+} 
+.our-news{
+    display: flex;
+    justify-content: center !important;
+    padding: 75px 0px !important;
+} 
+.our-news .row{
+    width: 960px !important;
+}
+.all-news{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.our-news img{
+    width: 930px !important;
+}
+.linear-gradient-img{
+    width: 930px !important;
+}
+.our-news-text{
+    padding: 50px 20px !important;
+}
+.style-data span{
+    margin-bottom: 40px;
+}
+.name2{
+    flex-direction: column;
+}
+.video-size{
+    margin-bottom: 20px !important;
+}
+.promotion{
+    justify-content: center;
+    display: flex;
+    padding: 77px 0px;
+}
+.promotion .row{
+    width: 960px;
+}
+.special-style{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.same-width{
+    width: 930px;
+}
+.find-us-here{
+    margin-top: 0px !important;
+}
+.times{
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+.times .row{
+    width: 960px !important;
+}
+.times{
+    background-size: 0%;
+}
+.best-solutions{
+    margin-bottom: 90px !important;
+}
+.best-solutions-img{
+    margin-bottom: 15px !important;
+}
+.three-pict .row{
+    width: 960px !important;
+}
+.three-pict-margin{
+    margin-bottom: 25px !important;
+}
+.three-pict{
+    padding: 55px 0px;
+    display: flex;
+    justify-content: center;
+}
+}
+@media only screen and (max-width: 959px) {
+    .my_container{
+        width: 748px;
+    } 
+    .our-news .row{
+        width: 748px !important;
+    }
+    .our-news img{
+        width: 718px !important;
+    }
+    .linear-gradient-img{
+        width: 718px !important;
+    } 
+    .promotion .row{
+        width: 748px;
+    }
+    .same-width{
+        width: 718px;
+    }
+    .times .row{
+        width: 748px !important;
+    }
+    .three-pict .row{
+        width: 748px !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .my_container {
+        width: 460px;
+    }
+    .our-news .row{
+        width: 460px !important;
+    }
+    .our-news img{
+        width: 430px !important;
+    }
+    .linear-gradient-img{
+        width: 430px !important;
+    } 
+    .our_services{
+        font-size: 40px !important;
+    }
+    .my_container img{
+        width: 100%;
+    }
+    .our_services h1{
+        font-size: 40px !important;
+    }
+    .promotion .row{
+        width: 460px;
+    }
+    .same-width{
+        width: 430px;
+    }
+    .special-style h1{
+        font-size: 40px !important;
+    }
+    .special-style{
+        padding: 100px 0px !important;
+    }
+    .times .row{
+        width: 460px !important;
+    }
+    .three-pict .row{
+        width: 460px !important;
+    }
+}
+@media only screen and (max-width: 479px){
+    .my_container{
+         width: 300px;
+    }
+    .our-news .row{
+        width: 300px !important;
+    }
+    .our-news img{
+        width: 270px !important;
+    }
+    .linear-gradient-img{
+        width: 270px !important;
+    }
+    .promotion .row{
+        width: 300px;
+    }
+    .same-width{
+        width: 270px;
+    }
+    .times .row{
+        width: 300px !important;
+    }
+    .center_words{
+        width: 300px !important;
+    text-align: center !important;
+    margin-bottom: 50px !important;
+    }
+    .best-solutions-img{
+        width: 300px !important;
+        text-align: center;
+    }
+    .best-solutions p{
+        width: 300px !important;
+        text-align: center;
+    }
+    .bestsolutions{
+        width: 300px !important;
+    }
+    .three-pict .row{
+        width: 300px !important;
+    }
+}
+.meals_time{
+    background-color: #c0a58b;
+    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #fff !important;
+}
+.meals_time_different{
+    background-color: white;
+    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    color: #2d2d2d !important;
+    border: 1px solid #f1f1f1;
+}
+.nd_options_position_absolute{
+    width: 90%;
+    bottom: 12px;
+    position: absolute;
+    border-bottom: 2px dotted #f1f1f1;
+    height: 3px;
+    display: block;
+}
+.data{
+    background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%),url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-10.jpg");    background-size: cover;
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
     margin-top: 60px !important;
+}
+.style-data{
+    padding-left: 55.5px;
+    padding-right: 55.5px;
+}
+.data p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.data span{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    justify-content: center;
+    display: flex;
+}
+.center_words{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.bestsolutions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_words h2{
+    font-family: 'Kristi', cursive !important;
+    font-size: 70px;
+    color: #eeeeee;
+}
+.our_services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 45px;
+}
+.our_services_menu{
+    width: 100%;
+}
+.our_services h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    color: #2d2d2d;
+    font-weight: 100;
+    line-height: 50px;
+    letter-spacing: 2px;
+}
+.our-news{
+    padding: 75px;
+}
+.our-news h4{
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    color: #c0a58a;
+}
+.our-news h1{
+    color: #2d2d2d;
+    font-size: 30px;
+    line-height: 30px;
+}
+.our-news h5{
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+.our-news a{
+    background-color: #c0a58a;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 16px;
+    color: white;
+}
+.our-news a:hover{
+    color: white;
+    text-decoration: none;
+}
+.linear-gradient-img{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+    position: absolute;
+    top: 0;
+}
+.service{
+    margin-top: 0px !important;
     padding-top: 100px !important;
     padding-bottom: 100px !important;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/slide-04.jpg");
@@ -83,17 +627,17 @@ header{
 .card{
     background: white;
     border-radius: 0 !important;
-    margin-right: 100px !important;
-    margin-left: 100px !important;
+    margin-right: 100px ;
+    margin-left: 100px ;
     padding-top: 40px !important;
-    padding-right: 40px !important;
+    padding-right: 33px !important;
     padding-bottom: 40px !important;
-    padding-left: 40px !important;
+    padding-left: 33px !important;
 }
 .service-right{
     padding: 35px;
 }
-.service-right .col-4{
+.service-info{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -198,4 +742,5 @@ color: #ffffff;
     height: 35px;
     width: 35px;
 }
+
 
