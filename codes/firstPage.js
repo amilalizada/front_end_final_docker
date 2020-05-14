@@ -9,6 +9,7 @@ function scrollPage(){
 }
 $('.parallax-window').parallax({
     positionX: '10px',
+    speed:'0.9',
 }); 
 function updateInfo() {
     console.log('in update');
@@ -33,7 +34,12 @@ function updateInfo() {
         last.appendChild(li);
     }
 }
-
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.inhamburger').classList.toggle('show');
+})
+document.querySelector('.hamburger-x').addEventListener('click', function() {
+    document.querySelector('.inhamburger').classList.toggle('show');
+})
 const myCalendar = new HelloWeek({
     selector: '.hello-week',
     lang: 'en',
@@ -100,6 +106,7 @@ $(document).ready(function(){
                     element.classList.remove('buttons-bg'));
                 this.classList.add('buttons-bg');
             }))
+
         document.querySelector('.bk-table').addEventListener('click',function(){
             let typeOfRest = document.querySelector('#choosed-rest-type').textContent;
             let countOfGuests = document.querySelector('.number').textContent;
@@ -107,11 +114,6 @@ $(document).ready(function(){
             let date = myCalendar.lastSelectedDay;
             let occasion = document.querySelector('.not-set').textContent;
             let selected = document.querySelector('#choosed-rest-type').textContent;
-            console.log(typeOfRest);
-            console.log(countOfGuests);
-            console.log(time);
-            console.log(date);
-            console.log(occasion);
             document.querySelector('.hello-week').classList.add('d-none');
             document.querySelector('.about-occasion').classList.add('d-none');
             document.querySelector('.about-time').classList.add('d-none');
@@ -130,11 +132,17 @@ $(document).ready(function(){
 
             scrollPage();
         })
+            
+
         document.querySelector('.check-button').addEventListener('click',function(){
             let name = document.querySelector('.name-input').value;
+            document.querySelector('.name-input').value = '';
             let surname = document.querySelector('.surname-input').value;
+            document.querySelector('.surname-input').value = '';
             let email = document.querySelector('.email-input').value;
+            document.querySelector('.email-input').value = '';
             let phone = document.querySelector('.number-input').value;
+            document.querySelector('.number-input').value = '';
             let description = document.querySelector('.textarea-input').value;
             document.querySelector('.name-of-guest').innerHTML = name;
             document.querySelector('.surname-of-guest').innerHTML = surname;
@@ -145,5 +153,44 @@ $(document).ready(function(){
             document.querySelector('.details-2').classList.remove('d-none');
             scrollPage();
         })
+            
+        document.querySelectorAll('.nd_rst_margin_top_6').forEach(element=>
+            element.addEventListener('click',function(){
+                let attr_minus = 'http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/plugins/nd-shortcodes/img/icons/icon-less-white.png';
+                let attr_plus = 'http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/plugins/nd-shortcodes/img/icons/icon-add-white.png';
+                if(this.getAttribute('src')== attr_plus){
+                this.setAttribute('src',attr_minus);
+            }else{
+                this.setAttribute('src',attr_plus);
+            }
+            }))
         
+        document.querySelector('.send-request').addEventListener('click',function(){
+            let countOfGuests = document.querySelector('.count-of-guests').textContent;
+            let occasion = document.querySelector('.type-of-occasion').textContent;
+            let time = document.querySelector('.time-of-order').textContent;
+            let date = document.querySelector('.date-of-order').textContent;
+            let name = document.querySelector('.name-of-guest').textContent;
+            let surname = document.querySelector('.surname-of-guest').textContent;
+            let email = document.querySelector('.email-of-guest').textContent;
+            let phone = document.querySelector('.phone-of-guest').textContent;
+
+
+            document.querySelector('.hill-rest').classList.add('d-none');
+            document.querySelector('.parent-of-hello').classList.add('d-none');
+            document.querySelector('.about-time').classList.add('d-none');
+            document.querySelector('.after-request').classList.remove('d-none');
+            
+            
+
+            document.querySelector('.cnt-of-guests').innerHTML = countOfGuests;
+            document.querySelector('.dt-of-order').innerHTML = date;
+            document.querySelector('.tm-of-order').innerHTML = time;
+            document.querySelector('.nm-of-guests').innerHTML = name;
+            document.querySelector('.srnme-of-guests').innerHTML = surname;
+            document.querySelector('.mail-of-guests').innerHTML = email;
+            document.querySelector('.phn-of-guests').innerHTML = phone;
+            document.querySelector('.occasion-of-guests').innerHTML = occasion;
+            scrollPage();
+        })
 })
