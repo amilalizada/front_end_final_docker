@@ -846,7 +846,7 @@ color: #FFFFFF;
     position: fixed;
     right: 30px;
     bottom: 30px;
-    z-index: 1;
+    z-index: 1000;
 }
 .big-backet{
     height: 65px;
@@ -906,4 +906,7 @@ color: #FFFFFF;
     left: -40.5px;
     box-sizing: border-box;
     width: 1311px;
+}
+.my_container{
+    width: 90%;
 }
