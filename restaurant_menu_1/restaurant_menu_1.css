@@ -20,9 +20,6 @@ overflow-x: hidden !important;
 font-weight: 400 !important;
 }
 
-.parent-of-tph{
-    /* box-sizing: content-box !important; */
-}
 .top-of-header{
     height: 60px;
     width: 100%;
@@ -56,7 +53,11 @@ font-weight: 400 !important;
 /* Header ul bar */
 
 .under-the-header{
-    background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/para-open2.jpg);
+    
+     /* background-position: 50% 520% !important; */
+     background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/para-open2.jpg)");
+    /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-08.jpg"); */
+    /* background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/02/para-11.jpg); */
 
 }
 .nd_options_background_position_center_bottom {
@@ -64,10 +65,11 @@ font-weight: 400 !important;
 }
 .nd_options_background_size_cover {
     background-size: cover;
+    
 }
 .nd_options_section {
     width: 100%;
-    float: left;
+    
 }
 .main-li{
     list-style: none;
@@ -118,22 +120,29 @@ font-weight: 400 !important;
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
-    background: -moz-linear-gradient(top, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%);
-    background: -webkit-linear-gradient(top, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%);
+    /* background: -moz-linear-gradient(top, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%);
+    background: -webkit-linear-gradient(top, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%); */
     /* background: linear-gradient(to bottom, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%); */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00656460', endColorstr='#a6656460',GradientType=0 );
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00656460', endColorstr='#a6656460',GradientType=0 ); */
     
 }
-
+.empty-for-height{
+    height: 200px;
+}
 .h1-book-a-table{
     font-family: 'Kristi', cursive;
     font-size: 120px;
     color: white;
     font-weight: 400;
+    
 }
-.empty-for-height{
-    height: 200px;
-}
+/* .h1-book-a-table{
+    font-family: 'Kristi', cursive;
+    font-size: 120px;
+    color: white;
+    font-weight: 400;
+} */
+
 .home-li{
     display: none;
 }
@@ -341,12 +350,7 @@ font-weight: 400 !important;
 .main-contact:hover .main-contact-ul{
     display: block;
 }
-/* .book-a-table-ul{
-    display: none;
-}
-.book-a-table:hover .book-a-table-ul{
-    display: block;
-} */
+
 .book-a-table{
     border: 1px solid #fff;
     border-radius: 4px;
@@ -369,8 +373,115 @@ font-weight: 400 !important;
 .main-li a:hover{
         color:white;
     }
+    .logo_responsive{
+        margin-right: 50px;
+    }
+    .hamburger{
+        width: 25px;
+        height: 25px;
+        /* background-color: #1c1c1c; */
+        /* margin-right: -800px; */
+        float: right;
+    }
+    .inhamburger{
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        top: 0px;
+        right: -600px;
+        z-index: 10;
+        overflow-x: scroll;
+        transition: 1s ease-in;
+        transition: 1s ease-out;
+    
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .line{
+        margin-top: 5px;
+        background-color:#7e7e7e;
+        width: 25px;
+        height: 2px;
+    }
+    .hamburger-ul{
+        display: flex;
+        flex-direction: column;
+        background-color:  rgb(45, 45, 45);
+    }
+    .home-ul{
+        /* background-color:blanchedalmond; */
+        list-style: none;
+        position: relative;
+    }
+    .hamburger-ul-li{
+        list-style: none;
+    }
+    .hamburger-ul-li a{
+        text-decoration: none;
+        /* list-style: none; */
+        color: #fff;
+        font-weight: normal;
+        letter-spacing: 0px;
+    
+    }
+    .in-home-li{
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        line-height: 35px;
+        color: white;
+        list-style: none;
+    }
+    .hamburger-ul-li-in-li{
+        list-style: none;
+    }
+    .in-home-second-li span{
+        color: white;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .hamburger-ul-li-bookatable{
+        list-style: none;
+    }
+    .hamburger-ul-li-bookatable a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        font-size: 12px !important;
+        padding: 7px 15px !important;
+    
+    }   
+    .hamburger-x img{
+        width: 20px;
+        height: 20px;
+    }
+    .hamburger-x{
+        width: 25px;
+        height: 25px;
+        /* float: right; */
+        position: absolute;
+        top: -5px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .show{
+        /* transition: 0.7s; */
+        right: 0;
+    }
+    .logo_responsive img{
+        width: 120px;
+        height: 39px;
+        
+    }
+    
     .my_container{
-        width: 1200px;
+        width: 1170px;
         margin: auto;
     }
     @media only screen and (max-width: 1199px) and (min-width: 960px) {
@@ -493,4 +604,159 @@ font-weight: 400 !important;
         left: -40.5px;
         box-sizing: border-box;
         width: 1311px;
+    }
+    .background-menu{
+        height: 425px !important;
+        padding: 85px !important;
+        background-size: cover;
+        background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-01.jpg?id=1441) !important;
+    }
+    
+    
+    .card_of_menu{
+        color:#ffffff;
+        padding: 0px;
+    }
+    .p-tags p{
+        color:#ffffff;
+        font-size: 14px;
+        line-height: 27px;
+        font-weight: normal;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .card_of_menu button{
+        font-weight: normal;
+        cursor: pointer;
+        text-align: center;
+        -webkit-box-direction: normal;
+        font-size: 14px;
+         line-height: 27px;
+         background-color: #1c1c1c;
+         font-family: 'Quicksand', sans-serif;
+         border-radius: 3px;
+         padding: 7px 30px;
+         color: #fff !important;
+         border: 0;
+         height: 40px;
+         margin-top: 30px;
+    }
+    .card_of_menu button:focus{
+        box-shadow: none;
+    }
+    .card_of_h1{
+    color: #ffffff;   
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    }
+    .modal-header{
+        width: 100%;
+        background-image: url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-10.jpg");
+    }
+    .h1tag_modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Kristi', cursive;
+    font-size: 120px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    }
+    .meals_img img{
+        width: 100% !important;
+    }
+    .description_up{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .description_up .price{
+        font-size: 17px;
+        color: #2d2d2d;
+        margin-bottom: .5rem;
+        font-weight: normal;
+        background-color: white;
+        
+        /* line-height: 1.2; */
+    }
+    .description_down{
+        display: flex;
+        justify-content: space-between;
+    }
+    .description_up .meals_name{
+        font-size: 17px;
+        line-height: 17px;
+        color: #2d2d2d;
+        font-weight: normal;
+        z-index: 1;
+        background-color: white;
+    }
+    .nd_options_position_absolute{
+        width: 90%;
+        bottom: 12px;
+        position: absolute;
+        border-bottom: 2px dotted #f1f1f1;
+        height: 3px;
+        display: block;
+    }
+    .modal-body{
+        padding: 10px 50px;
+    }
+    .meals_time{
+        background-color: #c0a58b;
+        border-radius: 3px;
+        font-family: 'Quicksand', sans-serif;
+        display: inline-block;
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 13px;
+        color: #fff !important;
+    }
+    .meals_time_different{
+        background-color: white;
+        border-radius: 3px;
+        font-family: 'Quicksand', sans-serif;
+        display: inline-block;
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 13px;
+        color: #2d2d2d !important;
+        border: 1px solid #f1f1f1;
+    }
+    .center_words{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .bestsolutions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center_words h2{
+        font-family: 'Kristi', cursive !important;
+        font-size: 70px;
+        color: #eeeeee;
+    }
+    .our_services{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        position: absolute;
+        top: 56px;
+    }
+    .our_services h1{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 50px;
+        color: #2d2d2d;
+        font-weight: 100;
+        line-height: 50px;
+        letter-spacing: 2px;
     }
