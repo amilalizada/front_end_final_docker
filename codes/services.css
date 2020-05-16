@@ -402,7 +402,8 @@
     background-size: cover;
     padding: 40px;
     width: 100% !important;
-    height: 483px !important;
+    line-height: 1.5;
+    /* height: 483px !important; */
 }
 .grey-line{
     background-color: #e4e4e4;
@@ -431,7 +432,7 @@
     border-style: none !important;
 }
 .all-cards{
-    height: 483px;
+    /* height: 483px; */
     position: relative;
     padding-top: 20px;
     display: flex;
@@ -442,14 +443,14 @@
 }
 .for-texts h3{
     font-size: 20px;
-    line-height: 20px;
+    line-height: 50px;
     margin: 0px;
     padding: 0px;
     font-weight: normal;
 }
 .for-texts h5{
     font-size: 15px;
-    line-height: 15px;
+    line-height: 40px;
     margin: 0px;
     padding: 0px;
     font-weight: normal;
@@ -457,7 +458,7 @@
 .for-texts p{
     letter-spacing: 1px;
     font-size: 14px;
-    line-height: 27px;
+    line-height: 40px;
     color: #7e7e7e;
     text-align: center;
 }
@@ -670,7 +671,7 @@
     padding-right: 0;
     position:relative;
     z-index: 1;
-    height: 400px;
+    /* height: 400px; */
 }
 .doing{
     font-size: 40px;
