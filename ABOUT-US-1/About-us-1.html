@@ -208,7 +208,7 @@
                                         <li class="secondary-li book-for-hot">Book a Table </li>
                                         <li class="secondary-li delivery-for-new">Delivery</li>
                                         <li class="secondary-li list-of-services"><span>Services</span> <span
-                                                class="arrows">&#9658</span>;
+                                                class="arrows">&#9658</span>
                                             <ul class="services-ul">
                                                 <div class="secondary-service">
                                                     <li class="secondary-li">Services 1</li>
@@ -781,10 +781,14 @@
                     console.log('sasa')
                     $('.parallax-window').parallax({
                         positionX: "center",
-                        positionY: '-80',
-                        naturalWidth: '1500',
-                        naturalHeight: '1500',
-                        speed: "0.9"
+                        // positionY: '-80',
+                        // naturalWidth: '1000',
+                        // naturalHeight: '700',
+                        naturalWidth: '100',
+                        naturalHeight: '500',
+                        speed: "0.9",
+                        androidFix: false,
+                        iosFix: false,
                     });
                 }
                 else {
@@ -794,7 +798,9 @@
                         naturalWidth: '800',
                         naturalHeight: '500',
                         // naturalWidth:'1000',
-                        speed: "0.9"
+                        speed: "0.9",
+                        androidFix: false,
+                        iosFix: false,
                     });
                 }
             })
@@ -806,7 +812,9 @@
                         positionY: '-80',
                         naturalWidth: '500',
                         naturalHeight: '400',
-                        speed: "0.9"
+                        speed: "0.3",
+                        androidFix: false,
+                        iosFix: false,
                     });
                 }
                 else {
@@ -816,7 +824,9 @@
                         naturalWidth: '800',
                         naturalHeight: '500',
                         // naturalWidth:'1000',
-                        speed: "0.9"
+                        speed: "0.9",
+                        androidFix: false,
+                        iosFix: false,
                     });
                 }
             })

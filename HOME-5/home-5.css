@@ -11,16 +11,12 @@ font-family: 'Quicksand', sans-serif !important;
 font-weight: 400 !important;
 }
 header{
-    width: 1200px;
     margin: auto;
     padding: 0px;
 }
 .class-header{
     padding: 20px 40px 20px 40px !important;
-    margin-left: -15px;
-    margin-right: -15px;
     position: relative;
-    left: -40.5px;
     box-sizing: border-box;
     width: 1311px;
 }
@@ -77,8 +73,13 @@ header{
 
 
 
-.under-the-header{
-    background: linear-gradient(to bottom, rgba(45,45,45,0.4) 0%, rgba(45,45,45,0.9) 100%), url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/wp-content/uploads/2019/01/para-03.jpg);
+.under-the-header1{
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(28, 28, 28, 0.2) 0%, rgba(28, 28, 28, 0.7) 100%) repeat scroll 0% 0%;
+    height: 800px;
+}
+.under-the-header2{
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(28, 28, 28, 0.2) 0%, rgba(28, 28, 28, 0.7) 100%) repeat scroll 0% 0%;
+    height: 800px;
 }
 .nd_options_background_position_center_bottom {
     background-position: center center;
@@ -114,12 +115,11 @@ header{
 .secondary-li{
     color: white;
     list-style: none;
-}
-.arrows{
-    padding-left: 75px;
-}
-.arrows-menu{
-    padding-left: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 15px !important;
 }
 
 .logo-ristorante{
@@ -270,9 +270,6 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.arrows-contact{
-    padding-left: 80px;
-}
 
 .contact-ul{
     display: none;
@@ -290,9 +287,6 @@ header{
     position:relative;
     display: flex;
     justify-content: space-between;
-}
-.arrows-about{
-    margin-left: 72px;
 }
 
 .about-ul{
@@ -1109,7 +1103,7 @@ input::placeholder{
     padding-left: 33px !important;
 }
 .service-right{
-    padding: 35px;
+    padding: 35px 100px !important;
 }
 .service-info{
     display: flex;
@@ -1186,9 +1180,10 @@ color: #ffffff;
     color: white;
     position: absolute;
     left: 13px;
-    top: 10px;
+    top: 9px;
 }
 .count{
+    margin-top: 5px;
     font-size: 25px;
     color: white;
     padding-left: 5px;
@@ -1231,3 +1226,186 @@ color: #ffffff;
 }
 
 
+/* for parallax(navbar) */
+  
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .slick-dots li button {
+    border: 2px solid white !important;
+    background: transparent;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+  }
+  
+  .slick-dots .slick-active button{
+    animation-name: forbutton;
+    background: white;
+    animation-duration: 2s;
+}
+@keyframes forbutton{
+    0%{
+        background: transparent;
+    }
+    100%{
+        background: white;
+    }
+}
+
+  
+  .slick-dots li button::before {
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+  }
+  @keyframes arrow{
+      0%{
+          right: 80px;
+      }
+      100%{
+          right: 60px;
+      }
+  }
+  .slick-arrow{
+    background: transparent;
+    border-style: none;
+    position: absolute;
+    bottom: 50px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    cursor: pointer;
+  }
+  .slick-arrow svg path{
+    transition: 0.3s all ease !important;
+  }
+  .slick-arrow svg:hover path{
+      fill: rgb(45, 48, 50) !important;
+  }
+  /* @-webkit-keyframes fadeInUpSD {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  } */
+  
+  @keyframes fadeInUpSD {
+    0%,50% {
+        width: 0%;
+     /* display: none;
+      -webkit-transform: translatex(-100px);
+      transform: translatex(-100px); */
+    }
+  
+    100% {
+        width: 100%;
+      /* display: block; */
+      /* -webkit-transform: none; */
+      /* transform: none; */
+    }
+  }
+  
+  .fadeInUpSD {
+    -webkit-animation-name: fadeInUpSD;
+    animation-name: fadeInUpSD;
+  }
+  .slick-active .parallax-info-1{
+    animation-delay: -1s;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: fadeInUpSD;
+    animation-duration: 5s;
+    opacity: 1;
+    width: 100%;
+}
+.slick-active .parallax-info-2{
+    animation-delay: -1s;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: fadeInUpSD;
+    animation-duration: 5s;
+    opacity: 1;
+    width: 100%;
+}
+.padding-parallax{
+    padding: 100px;
+}
+/* #slick-slide-control01:focus .first{
+    visibility: hidden !important;
+} */
+/* end parallax(navbar) */
+.lunch h1{
+    margin-bottom: 20px;
+    font-size: 100px;
+    line-height: 90px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+}
+.latest-promotions p{
+    margin-left: 8px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+}
+.navbar-book{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    background-color: rgb(192, 165, 138);
+    border-radius: 3px;
+    padding: 15px 30px;
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    margin-left: 8px;
+}
+.navbar-book:hover{
+    background: rgb(45,48,50);
+}
+.navbar-book a{
+    color: white;
+}
+.navbar-book a:hover{
+    color: white;
+    text-decoration: none;
+}

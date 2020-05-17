@@ -110,13 +110,14 @@ header{
 .secondary-li{
     color: white;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 15px !important;
 }
-.arrows{
-    padding-left: 75px;
-}
-.arrows-menu{
-    padding-left: 68px;
-}
+
+
 
 .logo-ristorante{
     padding-top: 10px;
@@ -266,9 +267,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.arrows-contact{
-    padding-left: 80px;
-}
+
 
 .contact-ul{
     display: none;
@@ -287,9 +286,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.arrows-about{
-    margin-left: 72px;
-}
+
 
 .about-ul{
     display: none;
@@ -644,9 +641,10 @@ color: #ffffff;
     color: white;
     position: absolute;
     left: 13px;
-    top: 10px;
+    top: 9px;
 }
 .count{
+    margin-top: 5px;
     font-size: 25px;
     color: white;
     padding-left: 5px;
@@ -673,6 +671,11 @@ color: #ffffff;
     border-radius: 100%;
     height: 35px;
     width: 35px;
+}
+#googleMap{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 280px
 }
 
 

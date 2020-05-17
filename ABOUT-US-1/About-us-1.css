@@ -110,13 +110,14 @@ header{
 .secondary-li{
     color: white;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 15px !important;
 }
-.arrows{
-    padding-left: 75px;
-}
-.arrows-menu{
-    padding-left: 68px;
-}
+
+
 
 .logo-ristorante{
     padding-top: 10px;
@@ -266,9 +267,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.arrows-contact{
-    padding-left: 80px;
-}
+
 
 .contact-ul{
     display: none;
@@ -287,9 +286,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.arrows-about{
-    margin-left: 72px;
-}
+
 
 .about-ul{
     display: none;
@@ -418,10 +415,7 @@ header{
     cursor: pointer;
 }
 .for-book-background{
-    /* background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-08.jpg"); */
-    /* background-size: cover;
-    background-position: center; */
-    margin-top: 50px;
+     margin-top: 50px;
 }
 .for-book-special{
     text-align: center;
@@ -560,9 +554,6 @@ input::placeholder{
 .hamburger{
     width: 25px;
     height: 25px;
-    /* background-color: #1C1C1C
-; */
-    /* margin-right: -800px; */
     float: right;
 }
 .line{
@@ -588,7 +579,6 @@ input::placeholder{
     background-color:  rgb(45, 45, 45);
 }
 .home-ul{
-    /* background-color:blanchedalmond; */
     list-style: none;
     position: relative;
 }
@@ -601,7 +591,6 @@ input::placeholder{
 .hamburger-ul-li a{
     font-size: 16px;
     text-decoration: none;
-    /* list-style: none; */
     color: #fff;
     font-weight: normal;
     letter-spacing: 0px;}
@@ -943,9 +932,10 @@ color: #ffffff;
     color: white;
     position: absolute;
     left: 13px;
-    top: 10px;
+    top: 9px;
 }
 .count{
+    margin-top: 5px;
     font-size: 25px;
     color: white;
     padding-left: 5px;
@@ -982,4 +972,5 @@ color: #ffffff;
 .parallax-window-book{
     background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%);
 }
+
 
