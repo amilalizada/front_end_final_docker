@@ -51,7 +51,7 @@ overflow-x: hidden !important;
 
 .under-the-header{
     
-     background-position: 50% 520% !important;
+     background-position: 50% 280% !important;
      background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-08.jpg");
     /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-08.jpg"); */
 
@@ -593,7 +593,7 @@ color: #ffffff;
 }
 .address_background{
     height: 666px;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* background-color: transparent; */
     /* background-repeat: no-repeat; */
     background-position: 50% 58%;
