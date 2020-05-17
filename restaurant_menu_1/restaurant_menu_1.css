@@ -54,10 +54,10 @@ font-weight: 400 !important;
 
 .under-the-header{
     
-     /* background-position: 50% 520% !important; */
-     background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/para-open2.jpg)");
-    /* background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ),url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-08.jpg"); */
-    /* background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/02/para-11.jpg); */
+    background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/para-open2.jpg");
+    /* background-image:url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/para-open2.jpg"); */
+    background-position: 50% 33% !important;
+    
 
 }
 .nd_options_background_position_center_bottom {
@@ -74,6 +74,7 @@ font-weight: 400 !important;
 .main-li{
     list-style: none;
     position: relative;
+    white-space: nowrap;
    
 }
 .main-li ul{
@@ -194,6 +195,7 @@ font-weight: 400 !important;
     list-style: none;
     position: absolute;
     background-color: white;
+    /* white-space: nowrap; */
     
 }
 .secondary-li{
@@ -605,12 +607,24 @@ font-weight: 400 !important;
         box-sizing: border-box;
         width: 1311px;
     }
-    .background-menu{
+    .brunch .background-menu{
         height: 425px !important;
         padding: 85px !important;
         background-size: cover;
         background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-01.jpg?id=1441) !important;
     }
+    .lunch .background-menu{
+        height: 425px !important;
+        padding: 85px !important;
+        background-size: cover;
+        background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-02.jpg?id=1442) !important   
+     }
+     .dinner .background-menu{
+        height: 425px !important;
+        padding: 85px !important;
+        background-size: cover;
+         background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-03.jpg?id=1443) !important;
+     }
     
     
     .card_of_menu{
@@ -654,6 +668,9 @@ font-weight: 400 !important;
     .modal-header{
         width: 100%;
         background-image: url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-10.jpg");
+    }
+    .modal-content{
+        position: relative;
     }
     .h1tag_modal{
         display: flex;
@@ -759,4 +776,181 @@ font-weight: 400 !important;
         font-weight: 100;
         line-height: 50px;
         letter-spacing: 2px;
+    }
+    .view-button{
+        background-color: #c0a58b;
+        border-radius: 3px;
+        padding: 8px 20px;
+        color: #fff !important;
+        outline: none;
+        border: 0;
+        font-size: 14px;
+    }
+    .view_card_sale{
+        background-color: black;
+        border-radius: 3px;
+        font-family: 'Quicksand', sans-serif;
+        display: inline-block;
+        padding: 7px 10px;
+        font-size: 13px;
+        line-height: 13px;
+        color: #fff !important;
+        position: relative;
+    }
+    .view_cards{
+        position: relative;
+    }
+    .small_image{
+        position: absolute;
+        /* top: -20px;
+        left: -10px; */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 5;
+        top: -12px;
+        left: 4px;
+    }
+    .small_image img{
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        background-color: #c0a58b !important;  
+        /* position: fixed;   */
+        top: 30px;
+        border-radius: 50%;
+    }
+    .small_image_2{
+        position: absolute;
+        top: -12px;
+        left: 4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+    .small_image_2 img{
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        background-color: #6f925c !important;  
+        /* position: fixed;   */
+        top: 30px;
+        border-radius: 50%;
+    }
+    .small_image_4{
+        position: absolute;
+        top: -12px;
+        left: 4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+    .small_image_4 img{
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        background-color: #e8d647 !important;  
+        /* position: fixed;   */
+        top: 30px;
+        border-radius: 50%;
+    }
+    .between-image{
+        background-image: url();
+    }
+    .view-button-buy-now{
+        background-color: #c0a58b;
+        border-radius: 3px;
+        /* border-radius: 0; */
+        padding: 8px 20px;
+        color: #fff !important;
+        outline: none;
+        border: 0;
+        font-size: 14px;
+    }
+    .nav-pills{
+        justify-content: center;
+        color: #2a2a2a;;
+    }
+    .nav-item a{
+        /* background-color: white !important; */
+        outline: none;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        color: #2a2a2a;
+        
+    }
+    .nav-item a:active{
+        background-color: white !important;
+        color: #2a2a2a;
+      
+    }
+    .nav-pills .nav-link.active{
+        background-color: white;
+        color: black;
+    }
+    .nav-item a:focus{
+        border-bottom: 2px solid #c0a58b;
+        padding-bottom: 4px;
+        border-radius: 0;
+
+    }
+    .card-header{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        border:0;
+    }
+    #headingOne{
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 0;
+    }
+    #headingOne button{
+        color: black;
+        text-decoration: none;
+    }
+    #headingTwo{
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 0;
+    }
+    #headingTwo button{
+        color: black;
+        text-decoration: none;
+    }
+    #headingThree{
+        background-color: white;
+        border: 2px solid black;
+        ;
+        border-radius: 0;
+    }
+    #headingThree button{
+        color: black;
+        text-decoration: none;
+    }
+    .lorem_ipsum_dolor_sit{
+        color:#7e7e7e;
+    }
+    .close_modal_div{
+       
+    }
+    .close_modal{
+        color:white;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+
+        border-radius: 50%;
+        font-size: 35px;
+        top: -40px;
+        cursor: pointer;
+    }
+    .center-img{
+        background-size: cover;
+        background: linear-gradient(to bottom, rgba(45,45,45,0.2) 0%, rgba(45,45,45,0.9) 100%), url("http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-07.jpg")
+        /* background-image: url(http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/para-07.jpg); */
     }

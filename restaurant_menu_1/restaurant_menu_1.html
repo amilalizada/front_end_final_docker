@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="restaurant_menu_1.css">
@@ -280,7 +281,7 @@
                                     <li class="secondary-li">Coming Soon</li>
                                 </ul>
                             </li>
-                            <li class="main-li menu-menu"><a href=''>MENU</a>
+                            <li class="main-li menu-menu" style="border-bottom: 1px solid white;"><a href=''>MENU</a>
                                 <ul class="main-menu-ul">
                                     <li class="secondary-li delivery-for-new">Menu 1</li>
                                     <li class="secondary-li">Menu 2</li>
@@ -340,29 +341,11 @@
                 </h1>
             </div>
 
-            <!-- <div class="row">
-                <div class="header_center_text col-8 m-auto">
-                    <div class="header_center_text_inner row">
-                        <div class="col-12">
-                            <h1 class="specialist">SPECIALIST</h1>
-                            <p class="header_center_text_description mt-4">LOREM IPSUM DOLOR SIT AMET,
-                                CONSECTETURADIPISCING
-                                ELIT. DONEC AT LIGULA IN LIGULA ULTRICESVULPUTATE AT AC SAPIEN. IN JUSTO NEQUE,
-                                MALESUADAA
-                                LIBERO ET, LOREM IPSUM DOLOR SIT AMET,CONSECTETUR ADIPISCING ELIu</p>
-                            <div>
-                                <button class="book_a_table mt-4 mb-5">BOOK A TABLE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
         </div>
     </header>
-    <section class="menues my_container mt-5 mb-5">
+    <section class="menus my_container mt-5 mb-5">
         <div class="row">
-            <div class="brunch col-xl-4 col-12">
+            <div class="brunch col-xl-4 col-12 col-lg-8 m-lg-auto">
                 <div class="background-menu" style="padding: 40px;">
                     <div class="card_of_menu" style="text-align: center;">
                         <h1>Brunch</h1>
@@ -384,7 +367,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lunch col-xl-4 col-12">
+            <div class="lunch col-xl-4 col-12 col-lg-8 m-lg-auto">
                 <div class="background-menu image-2" style="padding: 40px;">
                     <div class="card_of_menu" style="text-align: center;">
                         <h1 class="card_of_h1">Lunch</h1>
@@ -403,7 +386,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dinner col-xl-4 col-12">
+            <div class="dinner col-xl-4 col-12 col-lg-8 m-lg-auto">
                 <div class="background-menu" style="padding: 40px;">
                     <div class="card_of_menu" style="text-align: center;">
                         <h1>Dinner</h1>
@@ -431,62 +414,1347 @@
             <h1>SPECIALITIES</h1>
         </div>
     </div>
-    <section class="my_container view_images_section">
-        <div class="row ">
-            <div class="col-6 view_images">
+    <section class="my_container view_images_section mb-5">
+        <div class="row">
+            <div class="col-xl-6 col-12 view_images mb-4 mb-xl-0">
                 <div class="view_cards row">
-                    <div class="col-3 view_card_img w-100">
+                    <div class="small_image">
+                        <img
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/icon-menu-03.png">
+                    </div>
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 view_card_img w-100">
                         <div>
-                            <img
+                            <img style="width: 100%;"
                                 src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-04.jpg">
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-xl-8 col-lg-9 col-md-9 col-12">
                         <div class="meals_description">
-                            <div class="description_up row mt-3 ml-0">
+                            <div class="description_up row mt-1 ml-0">
                                 <div
                                     class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
                                 </div>
-                                <h4 class="meals_name">PASTA WITH FISH</h4>
-                                <h4 class="price">$ 39</h4>
+                                <h4 class="meals_name">THREAD WITH BRACE</h4>
+                                <h4 class="price">12 $</h4>
                             </div>
                             <div class="description_down row ml-0">
-                                <p>Meat / Rocket / Oil / Olives</p>
-                                <p class="meals_time">SALE</p>
+                                <p style="color: #7e7e7e; font-size: 12px;">Meat / Rocket / Oil / Olives</p>
+                                <p class="view_card_sale">SALE</p>
+                                <p class="lorem mb-0 col-xl-12 p-0" style="color: #7e7e7e;font-size: 14px;
+                                line-height: 27px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                                    eu libero elit.</p>
+                                <button class="view-button-buy-now">BUY NOW</button>
                             </div>
+
 
                         </div>
                     </div>
                 </div>
-                <div class="view_cards row">
-                    <div class="col-3 view_card_img">
+                <div class="view_cards row mt-5">
+                    <div class="small_image_2">
                         <img
-                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-04.jpg">
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/icon-menu-01.png">
                     </div>
-                    <div class="col-9">
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 view_card_img js_image w-100">
+
+                        <img style="width: 100%;"
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-07.jpg">
+
+                    </div>
+                    <div class="col-xl-8 col-lg-9 col-md-9 col-12">
                         <div class="meals_description">
-                            <div class="description_up row mt-3 ml-0">
+                            <div class="description_up row mt-1 ml-0">
                                 <div
                                     class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
                                 </div>
-                                <h4 class="meals_name">PASTA WITH FISH</h4>
-                                <h4 class="price">$ 39</h4>
+                                <h4 class="meals_name">PASTA WITH RAGU'</h4>
+                                <h4 class="price">12 $</h4>
                             </div>
                             <div class="description_down row ml-0">
-                                <p>Meat / Rocket / Oil / Olives</p>
-                                <p class="meals_time">SALE</p>
+                                <p style="color: #7e7e7e; font-size: 12px;">Meat / Pasta / Cheese / Onion</p>
+                                <p class="view_card_sale">NEW</p>
+                                <p class="lorem mb-0 col-xl-12 p-0" style="color: #7e7e7e;font-size: 14px;
+                                line-height: 27px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                                    eu libero elit.</p>
+                                <button class="view-button">VIEW IMAGES</button>
                             </div>
+
 
                         </div>
                     </div>
+                    <div class="fancy" style="display: none;"></div>
                 </div>
             </div>
-            <div class="col-6 view_images">
+            <div class="col-xl-6 col-12 view_images">
+                <div class="view_cards row">
+                    <div class="small_image">
+                        <img
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/icon-menu-04.png">
+                    </div>
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 col-12 view_card_img js_image  w-100">
 
+                        <img style="width: 100%;"
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-05.jpg">
+
+                    </div>
+                    <div class="col-xl-8 col-lg-9 col-md-9 col-12">
+                        <div class="meals_description">
+                            <div class="description_up row mt-1 ml-0">
+                                <div
+                                    class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                </div>
+                                <h4 class="meals_name">GRILLED FISH</h4>
+                                <h4 class="price">12 $</h4>
+                            </div>
+                            <div class="description_down row ml-0">
+                                <p style="color: #7e7e7e; font-size: 12px;">Sea bream / Oregano /Olive Oil
+                                </p>
+                                <p class="view_card_sale">NEW</p>
+                                <p class="lorem mb-0 col-xl-12 p-0" style="color: #7e7e7e;font-size: 14px;
+                                line-height: 27px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                                    eu libero elit.</p>
+                                <button class="view-button">VIEW IMAGES</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="view_cards row mt-5">
+                    <div class="small_image_4">
+                        <img
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/icon-menu-02.png">
+                    </div>
+                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 view_card_img js_image  w-100">
+
+                        <img style="width: 100%;"
+                            src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/04/menu-06.jpg">
+
+                    </div>
+                    <div class="col-xl-8 col-lg-9 col-md-9 col-12">
+                        <div class="meals_description">
+                            <div class="description_up row mt-1 ml-0">
+                                <div
+                                    class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                </div>
+                                <h4 class="meals_name">SMOKED HAM</h4>
+                                <h4 class="price">12 $</h4>
+                            </div>
+                            <div class="description_down row ml-0">
+                                <p style="color: #7e7e7e; font-size: 12px;">Ham / Cheese / Butter/Onion</p>
+                                <p class="view_card_sale">NEW</p>
+                                <p class="lorem mb-0 col-xl-12 p-0" style="color: #7e7e7e;font-size: 14px;
+                                line-height: 27px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                                    eu libero elit.</p>
+                                <button class="view-button">VIEW IMAGES</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="fancy">
+
+                </div> -->
             </div>
         </div>
-
     </section>
+    <div class="center-img">
+        <div class="height" style="height: 100px;">
+
+        </div>
+        <div class="center-img-word">
+            <h1 class="h1-book-a-table" style="display: flex;justify-content: center;">Appetizers</h1>
+        </div>
+    </div>
+    <div class="nav_pills_with mt-4 mb-4 d-lg-block d-xl-block d-none">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">STARTERS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">LUNCH SET</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">DESSERTS</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <section class="my_container">
+                    <div class="row with_pills">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">NOODLES</h4>
+                                    <h4 class="price">$ 16</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">CHICKEN</h4>
+                                    <h4 class="price">$ 19</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN FRIED</h4>
+                                    <h4 class="price">$ 34</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">GLUTAN FREE</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SALMON PASTA</h4>
+                                    <h4 class="price">$ 71</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">FISH</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <section class="my_container">
+                    <div class="row with_pills">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">NOODLES</h4>
+                                    <h4 class="price">$ 16</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">CHICKEN</h4>
+                                    <h4 class="price">$ 19</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN FRIED</h4>
+                                    <h4 class="price">$ 34</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">GLUTAN FREE</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SALMON PASTA</h4>
+                                    <h4 class="price">$ 71</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">FISH</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <section class="my_container">
+                    <div class="row with_pills">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">NOODLES</h4>
+                                    <h4 class="price">$ 16</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">CHICKEN</h4>
+                                    <h4 class="price">$ 19</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN FRIED</h4>
+                                    <h4 class="price">$ 34</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">GLUTAN FREE</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SALMON PASTA</h4>
+                                    <h4 class="price">$ 71</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">FISH</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="with_collapse d-lg-none d-xl-none d-block container mt-4 mb-4">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header mb-1" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            STARTERS
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p class="lorem_ipsum_dolor_sit">Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header  mb-1" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            LUNCH SET
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            DESSERTS
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">PASTA WITH FISH</h4>
+                                    <h4 class="price">$ 39</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">STARTER</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">FRESH MEAT</h4>
+                                    <h4 class="price">$ 26</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time_different">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">SPAGHETTI</h4>
+                                    <h4 class="price">$ 37</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">NEW</p>
+                                </div>
+
+                            </div>
+                            <div class="meals_description col-12">
+
+                                <div class="description_up row mt-3 ml-0">
+                                    <div
+                                        class="nd_options_position_absolute nd_options_height_3 nd_options_width_100_percentage nd_options_bottom_2 nd_options_border_bottom_2_dotted_grey">
+                                    </div>
+                                    <h4 class="meals_name">VEGETARIAN SOUP</h4>
+                                    <h4 class="price">$ 42</h4>
+                                </div>
+                                <div class="description_down row ml-0">
+                                    <p>Lorem ipsum dolor sit.</p>
+                                    <p class="meals_time">VEGAN</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-background">
             <div class="my_container">
@@ -574,6 +1842,9 @@
         aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
+                <div class="close_modal_div">
+                    <span class="close_modal" style="position: absolute;">×</span>
+                </div>
                 <div class="modal-header" style="background-size: cover;">
                     <h1 class="h1tag_modal mt-3" style="margin: auto;">Menu</h1>
                 </div>
@@ -739,10 +2010,15 @@
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    
+    <script src="fancy.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -754,6 +2030,11 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="restaurant_menu_1.js"></script>
+    
+
+
+    
+    <!-- <script src="restaurant_menu_1.js"></script> -->
 </body>
 
 </html>
