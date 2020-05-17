@@ -698,6 +698,18 @@ input::placeholder{
     justify-content: space-between;
 }
 @media only screen and (max-width: 1199px){
+    .latest-promotions p{
+        font-size: 19px !important;
+    }
+    .lunch h1{
+        font-size: 96px !important;
+    }
+    .navbar-book{
+        letter-spacing: 1px !important;
+        font-size: 15px !important;
+        line-height: 15px !important;
+        padding: 14px 29px !important;
+    }
     .left-header{
         display: none !important;
     }
@@ -810,7 +822,55 @@ input::placeholder{
     justify-content: center;
 }
 }
+@media only screen and (max-width: 1150px){
+    .latest-promotions p{
+        font-size: 18px !important;
+    }
+    .lunch h1{
+        font-size: 92px !important;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .lunch h1{
+        font-size: 88px !important;
+    }
+    .navbar-book{
+        letter-spacing: 1px !important;
+        font-size: 14px !important;
+        line-height: 14px !important;
+        padding: 13px 27px !important;
+    }
+}
+@media only screen and (max-width: 1050px){
+    .lunch h1{
+        font-size: 85px !important;
+    }
+}
+@media only screen and (max-width: 1035px){
+    .lunch h1{
+        font-size: 83px !important;
+    }
+    .latest-promotions p{
+        font-size: 17px !important;
+    }
+    .navbar-book{
+        letter-spacing: 1px !important;
+        font-size: 13px !important;
+        line-height: 13px !important;
+        padding: 13px 25px !important;
+    }
+}
+
 @media only screen and (max-width: 959px) {
+    .lunch h1{
+        font-size: 99px !important;
+        font-weight: 400 !important;
+    }.navbar-book{
+        letter-spacing: 1px !important;
+        font-size: 11px !important;
+        line-height: 11px !important;
+        padding: 15px 35px !important;
+    }
     .my_container{
         width: 748px;
     } 
@@ -836,7 +896,85 @@ input::placeholder{
         width: 748px !important;
     }
 }
+@media only screen and (max-width: 900px){
+    .lunch h1{
+        font-size: 88px !important;
+        font-weight: 400 !important;
+    }.navbar-book{
+        letter-spacing: 1px !important;
+        font-size: 10px !important;
+        line-height: 10px !important;
+        padding: 13px 31px !important;
+    }
+}
+@media only screen and (max-width: 880px){
+    .lunch h1{
+        font-size: 86px !important;
+        font-weight: 400 !important;
+    }.navbar-book{
+        letter-spacing: 1px !important;
+        font-size: 9px !important;
+        line-height: 9px !important;
+        padding: 13px 30px !important;
+    }
+    .latest-promotions p{
+        font-size: 17px !important;
+    }
+}
+@media only screen and (max-width: 860px){
+    .lunch h1{
+        font-size: 84px !important;
+        font-weight: 400 !important;
+    }
+}
+@media only screen and (max-width: 840px){
+   .lunch h1{
+        font-size: 76px !important;
+        font-weight: 400 !important;
+    }
+}
+@media only screen and (max-width:804px){
+    .lunch h1{
+        font-size: 69px !important;
+        letter-spacing: -5px !important;
+        line-height: 69px !important;
+    }
+    .parallax-info-1{
+        text-align: center;
+        margin-top: 120px;
+    }
+    .parallax-info-2{
+        text-align: center;
+        margin-top: 120px;
+    }
+    .latest-promotions p{
+        font-size: 14px !important;
+        letter-spacing: 3px !important;
+    }
+    .navbar-book{
+        font-size: 11px !important;
+        font-weight: 700 !important;
+    }
+}
 @media only screen and (max-width: 767px){
+    .slick-arrow{
+        display: none !important;
+    }
+    .lunch h1{
+        font-size: 62px !important;
+        letter-spacing: -5px !important;
+        line-height: 62px !important;
+    }
+    .latest-promotions p{
+        font-size: 12px !important;
+        letter-spacing: 3px !important;
+    }
+    .navbar-book{
+        font-size: 10px !important;
+        line-height: 10px !important;
+        padding: 13px 31px !important;
+        font-weight: 700 !important;
+    }
     .my_container {
         width: 460px;
     }
@@ -877,7 +1015,117 @@ input::placeholder{
         width: 460px !important;
     }
 }
+@media only screen and (max-width: 690px){
+    .lunch h1{
+        font-size: 57px !important;
+        letter-spacing: -5px !important;
+        line-height: 57px !important;
+    }
+    .latest-promotions p{
+        font-size: 11px !important;
+        line-height: 16px !important;
+        letter-spacing: 3px !important;
+    }
+    .navbar-book{
+        font-size: 9px !important;
+        line-height: 9px !important;
+        padding: 12px 28px !important;
+        font-weight: 700 !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .parallax-info-1{
+        margin-top: 180px;
+    }
+    .lunch h1{
+        font-size: 52px !important;
+        letter-spacing: -5px !important;
+        line-height: 52px !important;
+    }
+    .latest-promotions p{
+        font-size: 10px !important;
+        line-height: 15px !important;
+        letter-spacing: 2px !important;
+    }
+    .navbar-book{
+        font-size:8px !important;
+        line-height: 8px !important;
+        padding: 11px 26px !important;
+        font-weight: 700 !important;
+    }
+}
+@media only screen and (max-width: 544px){
+    .parallax-info-1
+    .lunch h1{
+        font-size: 45px !important;
+        letter-spacing: -5px !important;
+        line-height: 45px !important;
+    }
+    .latest-promotions p{
+        font-size: 9px !important;
+        line-height: 13px !important;
+        letter-spacing: 2px !important;
+    }
+    .navbar-book{
+        font-size:7px !important;
+        line-height: 7px !important;
+        padding: 10px 22px !important;
+        font-weight: 700 !important;
+    }
+}
+@media only screen and (max-width: 496px){
+    .under-the-header1{
+        height: 600px !important;
+    }
+    .under-the-header2{
+        height: 600px !important;
+    }
+    .parallax-info-1{
+        margin-top: -50px !important;
+    }
+    .parallax-info-2{
+        margin-top: -50px !important;
+    }
+    .lunch h1{
+        font-size: 49px !important;
+        letter-spacing: -5px !important;
+        line-height: 49px !important;
+    }
+    .latest-promotions p{
+        font-size: 12px !important;
+        line-height: 22px !important;
+        letter-spacing: 1px !important;
+    }
+    .navbar-book{
+        font-size:11px !important;
+        line-height: 11px !important;
+        padding: 15px 34px !important;
+        font-weight: 700 !important;
+    }
+    .padding-parallax{
+        padding: 100px 0px !important;
+    }
+}
 @media only screen and (max-width: 479px){
+    .time{
+        white-space: nowrap !important;
+    }
+    .lunch h1{
+        font-size: 42px !important;
+        letter-spacing: -5px !important;
+        line-height: 42px !important;
+    }
+    .latest-promotions p{
+        font-size: 10px !important;
+        line-height: 18px !important;
+        letter-spacing: 1px !important;
+    }
+    .navbar-book{
+        font-size:9px !important;
+        line-height: 9px !important;
+        padding: 13px 29px !important;
+        font-weight: 700 !important;
+    }
     .my_container{
          width: 300px;
     }
@@ -917,6 +1165,23 @@ input::placeholder{
     }
     .three-pict .row{
         width: 300px !important;
+    }
+}
+@media only screen and (max-width: 400px){
+    .lunch h1{
+        font-size: 33px !important;
+        letter-spacing: -5px !important;
+        line-height: 33px !important;
+    }
+    .latest-promotions p{
+        font-size: 8px !important;
+        letter-spacing: 1px !important;
+    }
+    .navbar-book{
+        font-size: 7px !important;
+        line-height: 7px !important;
+        padding: 10px 23px !important;
+        font-weight: 700 !important;
     }
 }
 .meals_time{

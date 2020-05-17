@@ -344,7 +344,7 @@
         <div class="col-xl-8 col-12 resp-video">
             <div class="img-background">
                 <div style="height: 200px"></div>
-                <div style="height: 100px">
+                <div class="d-flex justify-content-center align-items-center" style="height: 100px">
                     <!-- <a  class=" nd_options_outline_0 nd_options_mpopup_iframe"> -->
                     <img id="demo2" class="nd_options_transition_all_08_ease nd_options_opacity_05_hover"
                         src="http://www.nicdarkthemes.com/themes/restaurant/wp/demo/restaurant/wp-content/uploads/sites/2/2019/01/ico-06.png"
@@ -764,89 +764,7 @@
 
     <script src="parallax.js"></script>
     <script src="youtube-overlay.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            var configObject = {
-                sourceUrl: 'https://www.youtube.com/embed/j77wT96jHCI',
-                triggerElement: "#demo2",
-                progressCallback: function () {
-                    console.log("Callback Invoked.");
-                }
-            };
-            var videoBuild = new YoutubeOverlayModule(configObject);
-            videoBuild.activateDeployment();
-            $(window).load(function () {
-                if ($(window).width() < 1200) {
-                    console.log('sasa')
-                    $('.parallax-window').parallax({
-                        positionX: "center",
-                        // positionY: '-80',
-                        // naturalWidth: '1000',
-                        // naturalHeight: '700',
-                        naturalWidth: '100',
-                        naturalHeight: '500',
-                        speed: "0.9",
-                        androidFix: false,
-                        iosFix: false,
-                    });
-                }
-                else {
-                    $('.parallax-window').parallax({
-                        positionX: "center",
-                        positionY: '-80',
-                        naturalWidth: '800',
-                        naturalHeight: '500',
-                        // naturalWidth:'1000',
-                        speed: "0.9",
-                        androidFix: false,
-                        iosFix: false,
-                    });
-                }
-            })
-            $(window).resize(function () {
-                if ($(window).width() < 1200) {
-                    console.log('sa')
-                    $('.parallax-window').parallax({
-                        positionX: "center",
-                        positionY: '-80',
-                        naturalWidth: '500',
-                        naturalHeight: '400',
-                        speed: "0.3",
-                        androidFix: false,
-                        iosFix: false,
-                    });
-                }
-                else {
-                    $('.parallax-window').parallax({
-                        positionX: "center",
-                        positionY: '-80',
-                        naturalWidth: '800',
-                        naturalHeight: '500',
-                        // naturalWidth:'1000',
-                        speed: "0.9",
-                        androidFix: false,
-                        iosFix: false,
-                    });
-                }
-            })
-
-            $('.parallax-window-book').parallax({
-                // positionX: "center",
-                // positionY: '-80',
-                // naturalWidth: '1500',
-                // naturalHeight: '1500',
-                speed: "0.9"
-            });
-            document.querySelector('.hamburger').addEventListener('click', function () {
-                console.log('aa')
-                document.querySelector('.inhamburger').classList.toggle('show');
-            })
-            document.querySelector('.hamburger-x').addEventListener('click', function () {
-                document.querySelector('.inhamburger').classList.toggle('show');
-            })
-        })
-    </script>
+    <script src="About-us-1.js"></script>
 </body>
 
 </html>

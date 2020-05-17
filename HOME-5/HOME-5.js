@@ -101,8 +101,8 @@ $(document).ready(function () {
         infinite: true,
         speed: 500,
         fade: !0,
-        cssEase: 'linear',
-        slidesToShow: 1,
+        // cssEase: 'linear',
+        // slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 8000,
@@ -152,10 +152,11 @@ $(document).ready(function () {
 
     function firstSlider() {
         $('.parallax-mirror').eq(4).css('opacity', '0');
+        // $(img1).css('transform', 'scale(2)');
         // $('.parallax-mirror').eq(4).css('width', '1500');
         // $('.parallax-mirror').eq(4).css('visibilty', 'hidden');
         $('.parallax-mirror').eq(3).css('opacity', '0');
-        // $('.parallax-mirror').eq(4).animate({ opacity: "1", transform: "scale(1)" }, 3000, 'linear');
+        $('.parallax-mirror').eq(4).animate({ opacity: "1", }, 3000, 'linear');
         // $('.parallax-mirror').eq(4).animate({visibilty: "visible"}, 0, 'linear');
         // $(img1).animate({ transform: "scale(1)" }, 1000, 'linear');
         // $('.parallax-mirror').eq(4).animate({width: "1311px"}, 0, 'linear');

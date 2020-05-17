@@ -409,6 +409,8 @@ header{
 }
 #demo2{
     transition: all 0.8s ease;
+    width: 60px !important;
+    height: 60px !important;
 }
 #demo2:hover{
     opacity: 0.5;
