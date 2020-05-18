@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Contact-1.css">
+    <link rel="stylesheet" href="css/Contact-1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Contact-1</title>
@@ -493,28 +493,10 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-    <script>
+    <script src="js/contact-1.js"></script>
 
-
-        function myMap() {
-            var mapProp = {
-                center: new google.maps.LatLng(40.3842911, 49.8256206),
-                zoom: 17,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        }
-
-        document.querySelector('.hamburger').addEventListener('click', function () {
-            console.log('aa')
-            document.querySelector('.inhamburger').classList.toggle('show');
-        })
-        document.querySelector('.hamburger-x').addEventListener('click', function () {
-            document.querySelector('.inhamburger').classList.toggle('show');
-        })
-    </script>
-
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeURXXSVa2EcE5TOQzN_mAIGinmAAW3WE&callback=myMap"></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeURXXSVa2EcE5TOQzN_mAIGinmAAW3WE&callback=myMap"></script>
 
 
 </body>
