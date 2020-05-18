@@ -1,10 +1,9 @@
 
 $(document).ready(function() {
-    //bura yazacaqsan
     document.querySelectorAll('.view-button').forEach((element) => {
         element.addEventListener('click', function () {
             document.querySelector('.fancy').innerHTML = '';
-            // console.log(document.querySelectorAll('.js_image'));
+           
             document.querySelectorAll('.js_image').forEach((imageElement) => {
                 var imgSrc = imageElement.querySelector('img').getAttribute('src');
                 let aTag = document.createElement('a');
