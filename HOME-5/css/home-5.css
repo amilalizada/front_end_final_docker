@@ -604,7 +604,8 @@ header{
     cursor: pointer;
 }
 .promotion{
-    padding: 77px;
+    max-width: 1184px !important;
+    margin-top: 50px;
 }
 .menu-name{
     font-weight: lighter !important;
